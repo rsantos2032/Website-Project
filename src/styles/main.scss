@@ -1,0 +1,276 @@
+// Put your scss code here
+$base-color: #1abc9c;
+$base-text-col: white;
+$outer-flex: 20%;
+$main-padding: 20px;
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.header {
+  padding: 40px;
+  text-align: center;
+  background: $base-color;
+  color: $base-text-col;
+}
+
+.nav_bar {
+  display: flex;
+  background-color: #333;
+  z-index: 1;
+}
+
+.nav_bar a {
+  color: $base-text-col;
+  padding: $main-padding $main-padding;
+  text-decoration: none;
+  text-align: center;
+}
+
+.profile_pic {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 180px;
+}
+
+.nav_bar a:hover {
+  background-color: #ddd;
+  background-color: $base-color;
+  color: black;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-left: $main-padding;
+  padding-right: $main-padding;
+}
+
+
+.over_img {
+  width: 100%;
+  padding: $main-padding;
+  height: 600px;
+  background: url('assets/Peru_Background.jpg') no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+.description {
+  flex: $outer-flex;
+  background-color: $base-text-col;
+  padding: $main-padding;
+}
+
+.footer {
+  padding: $main-padding;
+  text-align: center;
+  background: $base-color;
+  color: $base-text-col;
+}
+
+.carousel {
+  flex: $outer-flex;
+  padding: 0px;
+  position: relative;
+  margin: auto;
+  padding-left: $main-padding;
+  padding-right: $main-padding;
+
+}
+
+.video {
+    flex: $outer-flex;
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    padding-bottom: $main-padding;
+}
+
+.true-video {
+  max-width: 800px;
+}
+
+.FF_header {
+  padding-left: $main-padding;
+  padding-right: $main-padding;
+}
+
+.modal_caption {
+  padding-left: $main-padding;
+  padding-right: $main-padding;
+}
+
+.multi-columns {
+  flex:$outer-flex;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  max-width:none;
+  padding-right: $main-padding;
+}
+
+.modal {
+  flex:$outer-flex;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  max-width:none;
+  padding-left: $main-padding;
+  padding-right: $main-padding;
+  padding-bottom: $main-padding;
+  align-self: center;
+}
+
+.modal-image {
+  flex: 20%;
+  height: 200px;
+  width: 200px;
+}
+
+.col {
+  flex: 30%;
+  height: 250px;
+  background-color: $base-color;
+  color: $base-text-col;
+  width: 90%;
+  margin-left: $main-padding;
+  padding-right: 10px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: $base-text-col;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+// Some of the code for the slideshow was modified from https://www.w3schools.com/howto/howto_js_slideshow.asp
+.next {
+  right: $main-padding;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.mySlides {
+  display: none
+}
+
+img {
+  vertical-align: middle;
+  width: 100%;
+  height: 600px;
+}
+
+.modal_popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-height: 250px;
+  max-width: 250px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.fa {
+  font-size: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .multi-columns, .modal {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .multi-columns, .modal {
+  flex-direction: row;
+  }
+}

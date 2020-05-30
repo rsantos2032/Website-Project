@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Your HTML code for head here -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>MP1</title>
+</head>
+
+<body>
+    <div class="header">
+      <h1>The Wonderful World of Llamas</h1>
+    </div>
+    <div class="nav_bar" id="nav_bar">
+      <a id="carousel_href" href="#carousel">Photos</a>
+      <a id="ff_href" href="#FF_header">Fun Facts</a>
+      <a id="stickers_href" href="#stickers">Stickers</a>
+      <a id="video_href" href="#video_main">Video</a>
+    </div>
+    <div class="main">
+        <div class="description" id="description">
+          <h2>What is a Llama?</h2>
+          <p> The llama is a domesticated South American camelid, widely used as
+            a meat and pack animal by Andean cultures since the Pre-Columbian era.
+          </p>
+          <p> Llamas are very social animals and live with others as a herd. Their wool is
+            very soft and lanolin-free. Llamas can learn simple tasks after a few repetitions.
+            When using a pack, they can carry about 25% to 30% of their body weight for 8 to 13 km
+            (5-8 miles). The name llama(in the past also spelled "lama" or "glama") was adopted by
+            European settlers from native Peruvians.
+          </p>
+          <p> Llamas appear to have originated from the central plains of North America about 40 million
+            years ago. They migrated to South America about three million years ago during the Great
+            American Interchange. By the end of the last ice age (10,000–12,000 years ago), camelids
+            were extinct in North America. As of 2007, there were over seven million llamas and
+            alpacas in South America, and due to importation from South America in the late 20th century,
+            there are now over 158,000 llamas and 100,000 alpacas in the United States and Canada.
+          <div class="over_img">
+            <img class="profile_pic" src="assets/llama_prof.png">
+          </div>
+      </div>
+
+      <div class="carousel" id="carousel">
+        <h2>Photos of Llamas!</h2>
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="assets/llama_three.jpg">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="assets/llama_2.jpg">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="assets/Llama_one.jpg">
+        </div>
+
+        <a id="prev" class="prev">&#10094;</a>
+        <a id="next" class="next">&#10095;</a>
+      </div>
+
+      <h2 class="FF_header" id="FF_header">Fun Facts!</h2>
+      <div class="multi-columns" id = "FF">
+        <div class="col">
+          <h4>To Spit or Not to Spit</h4>
+          <p>Llamas don't bite. They spit when they
+            <br> agitated, but mostly at each other.
+            <br> Llamas also kick and neck wrestle
+            <br> each other when agitated. </p>
+        </div>
+        <div class="col">
+          <h4>Socialites</h4>
+          <p>Llamas are social animals and prefer to
+            <br>live with other llamas or herd animals.
+            <br>The social structure of llamas changes
+            <br>frequently and a male llama can move up
+            <br>the social ladder by picking, and
+            <br>winning, small fights with the leader
+            <br>of the group.
+          </p>
+
+        </div>
+        <div class="col">
+          <h4>Isn't that an Alpaca Though?</h4>
+          <p> Trying to tell the difference between
+            <br> a llama and an alpaca? Two obvious
+            <br> things to look for: Llamas are generally
+            <br> about twice the size of alpacas, and
+            <br> alpacas have short, pointy ears, whereas
+            <br> llamas have much longer ears that stand
+            <br> straight up and give them an alert look.
+          </p>
+        </div>
+      </div>
+
+      <div class="modal_caption">
+        <h2 id="stickers">Stickers!</h2>
+        <h5>Click on a sticker to maximize it!</h5>
+      </div>
+
+      <div class="modal" id="modal">
+        <img class="modal-image" src="assets/llama-pngrepo-com.png">
+        <img class="modal-image" src="assets/llama-pngrepo-com (1).png">
+        <img class="modal-image" src="assets/llama-pngrepo-com (2).png">
+        <img class="modal-image" src="assets/llama-pngrepo (3)-com.png">
+        <img class="modal-image" src="assets/circus-llama-pngrepo-com.png">
+      </div>
+
+      <div class="modal_popup" id="modal_popup">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="mod-img">
+      </div>
+
+      <div class="modal_caption">
+        <h2 id="video_main">Video</h2>
+        <h5>Courtesy of Beau Wreng.</h5>
+      </div>
+      <div class="video" id="video">
+        <video class="true-video" controls>
+        <source src="assets/Llama.mp4" type="video/mp4">
+      </video>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h2>More About Us</h2>
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-snapchat"></i>
+      <i class="fa fa-instagram"></i>
+    </div>
+
+
+    <!-- DO NOT REMOVE THE FOLLOWING LINE -->
+    <script src="bundle.js" type="text/javascript"></script>
+</body>
+</html>
